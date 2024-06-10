@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narendra's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Narendra's Logo">
+                <span>Narendra</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="intro">
+                <img src="whitenew.jpeg" alt="Narendra's Image">
+                <div class="summary">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Hi, I'm Narendra. I'm a passionate developer ready to bring your ideas to life.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/narendra_kadali_?igsh=d3I1amg0M3dyNXQy"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Narendrakadali54/effective-guacamole.git"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/narendra-kadali-5871071bb"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="NarendraResume.pdf" class="download-resume">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am completed my B.Tech Graduation in the stream of CSE at BVC Engineering College.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Project: Website vulnerability scanning system</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach out to me via email at <a href="mailto:narendrakadali9999@gmail.com">narendrakadali9999@gmail.com</a> or by phone at <a href="tel:+91 6305655360">+91 6305655360</a>.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Narendra's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
